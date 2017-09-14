@@ -1,0 +1,10 @@
+---
+- hosts: all
+  connection: local
+  gather_facts: no
+  
+  tasks:
+  - name: gather facts
+    nxos_facts:
+      gether_subset:
+        - config
